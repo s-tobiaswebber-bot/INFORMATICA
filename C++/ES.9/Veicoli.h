@@ -17,6 +17,7 @@ class Veicoli{
     void frena();
     void accendi();
     void spegni();
+    void velocita();
 
 };
 #endif

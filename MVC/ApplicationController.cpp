@@ -13,18 +13,23 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
     void ApplicationController::logic(){
 
-            int scelta=3;
+            int scelta = 3;
+			int articolo;
 
-            std::cin >> scelta;//acquisisce l'input da tastiera (in futuro potrebbe farlo l'handleEvent)
+			std::cout << "Hai scelto: " << ((ApplicationModel*)model)->articoli[articolo];
+
+			std::cin >> scelta;
+				
 
             switch(scelta)
             {
-			case 0: //semplicemente esegue l'istr. successiva nel main (si dovrebbero invocare i distruttori degli oggetti non più utili)
+			case 0: //semplicemente esegue l'istr. successiva nel main (si dovrebbero invocare i distruttori degli oggetti non piï¿½ utili)
 				exit(0);
 				break;
 
                     //model->loadValue(model->getValue()+1);//incrementa
-			case 1: ((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue()+1);//incrementa
+			case 1: 
+			
 				break;
 
 			case 2: ((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue()-1);//decrementa

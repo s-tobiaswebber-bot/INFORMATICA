@@ -11,8 +11,7 @@ class ApplicationView : public MVC::View {
 public:
 	ApplicationView(ApplicationModel *m);
 
-	void draw(); 
-	int getScelta();
+	void draw();
 
 	///virtual void initialize();
 	//void initialize(){ mController = makeController();}
